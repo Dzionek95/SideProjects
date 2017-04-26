@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="572.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerLogin">
+    <top>
+        <Label contentDisplay="TOP" text="TvSeries Checker" textAlignment="CENTER" BorderPane.alignment="CENTER">
+            <font>
+                <Font name="Microsoft JhengHei UI" size="23.0" />
+            </font>
+        </Label>
+    </top>
+    <center>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+            <Label fx:id="labelMessage" prefHeight="21.0" prefWidth="200.0" textFill="RED">
+               <VBox.margin>
+                  <Insets left="195.0" />
+               </VBox.margin>
+            </Label>
+                <TextField fx:id="loginField" maxWidth="150.0" prefWidth="120.0" promptText="Login">
+                    <VBox.margin>
+                        <Insets left="210.0" top="50.0" />
+                    </VBox.margin>
+                </TextField>
+                <PasswordField fx:id="passwordField" maxWidth="150.0" prefHeight="31.0" prefWidth="120.0" promptText="Password">
+                    <VBox.margin>
+                        <Insets bottom="20.0" left="210.0" top="20.0" />
+                    </VBox.margin>
+                </PasswordField>
+                <Button fx:id="button" mnemonicParsing="false" onAction="#loginButton" text="Zaloguj">
+                    <VBox.margin>
+                        <Insets left="253.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
